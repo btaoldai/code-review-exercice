@@ -1,0 +1,16 @@
+# Modèle de configuration de releve-cli — valeurs d'exemple UNIQUEMENT.
+# Copiez ce fichier sous le nom config.txt, complétez-le avec vos valeurs
+# réelles, et ne l'enregistrez jamais dans le dépôt : config.txt est exclu
+# par le fichier .gitignore.
+
+# Chemin du fichier de relevés à traiter
+CHEMIN_RELEVES=exemples/releves.csv
+
+# Dossier où écrire le rapport de synthèse
+DOSSIER_RAPPORT=rapports/
+
+# Jeton d'accès au service de dépôt des rapports (valeur fictive à remplacer)
+API_KEY=cle-d-exemple-a-remplacer
+
+# Intervalle de rafraîchissement du rapport, en secondes
+INTERVALLE=300

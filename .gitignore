@@ -1,0 +1,28 @@
+# Fichier d'exclusions du dépôt releve-cli (Atelier Logiciel Nantais).
+
+# Valeurs de configuration réelles : jamais versionnées
+config.txt
+rapports/
+*.local
+.env
+
+# Dossiers produits par les outils
+build/
+dist/
+node_modules/
+__pycache__/
+
+# Fichiers propres à un éditeur ou à un système
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Journaux et fichiers temporaires
+*.log
+*.tmp
+*~
+
+# travail local, jamais versionné
+_branche-feature/
+journal.txt
