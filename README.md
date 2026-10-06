@@ -85,12 +85,12 @@ Schéma détaillé : [`docs/architecture.md`](docs/architecture.md).
 ## Exercice de revue de code
 
 Une contribution `feat: ajouter le traitement des relevés de niveau des postes` est proposée en
-pull request, **une par relecteur** (branches `feature/traiter-mesures-01` à `-18`, numéro annoncé
-en séance). Chaque relecteur relit la sienne sur trois axes — lisibilité, performance, sécurité — et
+pull request, **une par relecteur** (branches `feature/traiter-mesures-01` à `-18`) : chacun réserve une pull request libre par un
+premier commentaire, une par personne (travail individuel). Chaque relecteur relit la sienne sur trois axes — lisibilité, performance, sécurité — et
 soumet une revue. Consignes complètes : [`docs/revue-de-code.md`](docs/revue-de-code.md).
 
 ```
-git switch feature/traiter-mesures-07          # votre numéro
+git switch feature/traiter-mesures-07          # la pull request que vous avez réservée
 python3 traiter_mesures.py exemples/releves.csv
 python3 traiter_mesures.py exemples/releves-5000.csv --export-log journal.txt
 ```
