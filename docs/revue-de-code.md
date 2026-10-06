@@ -11,8 +11,9 @@ code fourni, à relire comme vous relieriez la contribution d'un collègue.
 - `main` ne contient pas le script.
 - Une branche par relecteur, `feature/traiter-mesures-01` à `feature/traiter-mesures-18`, ajoute
   le script ; une **pull request** est ouverte pour chacune, de la branche vers `main`. Les scripts
-  ne sont pas tous identiques. Vous relisez **votre** pull request, dont le numéro est annoncé en
-  séance ; vous pouvez lire celles des autres, pas y déposer de revue.
+  ne sont pas tous identiques. Choisissez une pull request **encore libre** et réservez-la par un
+  premier commentaire général : « Je relis cette pull request ». Une par personne, le travail
+  étant individuel ; si deux personnes ont réservé la même, la seconde en prend une autre. Vous pouvez lire celles des autres, pas y déposer de revue.
 
 | Fichier | Rôle |
 |---|---|
@@ -22,13 +23,12 @@ code fourni, à relire comme vous relieriez la contribution d'un collègue.
 
 ## Exécuter le script
 
-Si Python 3 est disponible sur votre poste (sinon, la lecture dans l'onglet *Files changed* suffit ;
-l'exécution est projetée en séance) :
+Si Python 3 est disponible sur votre poste (sinon, la lecture dans l'onglet *Files changed* suffit) :
 
 ```bash
 git clone https://github.com/btaoldai/code-review-exercice.git
 cd code-review-exercice
-git switch feature/traiter-mesures-07          # votre numéro
+git switch feature/traiter-mesures-07          # la pull request que vous avez réservée
 python3 traiter_mesures.py exemples/releves.csv
 python3 traiter_mesures.py exemples/releves-5000.csv --export-log journal.txt
 ```
